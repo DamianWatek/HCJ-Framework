@@ -1,0 +1,33 @@
+.material-icons { 
+    position: relative;
+    line-height: 0;
+    font-size: 1em;
+    bottom: -0.15em;
+}
+
+.mi-primary { color: $color_primary; }
+.mi-gray { color: $color_gray; }
+.mi-primary { color: $color_primary; }
+.mi-success { color: $color_success; }
+.mi-warning { color: $color_warning; }
+.mi-danger { color: $color_danger; }
+.mi-info { color: $color_info; }
+.mi-small { font-size: .8rem; }
+.mi-large { font-size: 3rem; }
+
+.icon-panel {
+    border: 1px solid $color_black;
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+    width: 150px;
+    
+    p {
+        font-size: .7rem;
+    }
+    
+    .material-icons {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+}

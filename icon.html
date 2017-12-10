@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+    <head>
+        <!-- meta tagi !-->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="author" content="Damian Watek" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>HCJ Framework</title>
+        <!-- link tagi !-->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=latin-ext" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/myFramework.css">
+    </head>
+    <body>
+        <!-- NAWIGACJA -->
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="navbar-logo">HCJ</a>
+                <a href="#" class="navbar-mobile-menu-button" data-menu-id="#menu-1">Manu</a>
+                <ul class="navbar-menu" id="menu-1">
+                    <li><a href="typography.html">Typografia</a></li>
+                    <li><a href="table.html">Tabele</a></li>
+                    <li><a href="form.html">Formularze</a></li>
+                    <li><a href="button.html">Przyciski</a></li>
+                    <li><a href="icon.html">Ikony</a></li>
+                    <li><a href="label.html">Etykiety</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-menu-button">Więcej <i class="material-icons">arrow_drop_down</i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="pagination.html">Paginacja</a></li>
+                            <li><a href="image.html">Obrazki</a></li>
+                            <li><a href="panel.html">Panele</a></li>
+                            <li><a href="preloader.html">Preloadery</a></li>
+                            <li><a href="tooltip.html">Tooltipy</a></li>
+                            <li><a href="alert.html">Alerty</a></li>
+                            <li><a href="tabs.html">Zakladki</a></li>
+                            <li><a href="modal.html">Wyskakujące okienka</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- HEADER -->
+        <header>
+            <div class="col-xl-12 main-color border-bottom-black">
+                  <div class="text-center">
+                     <h1>HCJ Framework</h1>
+                  </div>
+            </div>
+        </header>
+        <section class="page">
+            <!-- Nazwa działu -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 text-center">
+                        <h4>Ikony! <i class="material-icons mi-primary">face</i></h4>
+                    </div>
+                </div>
+            </div>
+            <!-- CONTENT -->
+            <div class="row mb-20">
+                <!-- ASIDE CONTENT -->
+                <aside class="col-xl-3 side-menu">
+                    <div class="row row-justify-center border-bottom-black pad-30 main-color">
+                        <img src="images/logo_big.png" alt="Logo Damian Watroba" class="img-responsive ">  
+                    </div>
+                    <div class="row row-justify-center pad-30 ">
+                        <p class="hidden-s">Cześć nazywam się Damian Wątroba i o to moja wersja HCJ Frameworka napisanego wraz z <strong>Adrianem Bieniasem</strong> twórcą kursu <i>Własny Framework HTML/CSS/JS</i>, który można znaleźć na stronie <a href="https://kuvi.pl/kurs/276/wlasny-framework-htmlcssjs-wprowadzenie">kuvi.pl</a></p>
+                    </div>
+                </aside>
+                <!-- MAIN CONTENT -->
+                <article class="col-xl-9">
+                    <!-- Tabele-->
+                    <section class="border-box-black pad-10">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-12 pad-0 bg-primary">
+                                    <h6><strong>Kilka przykładowych ikon</strong></h6>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-6 panel mt-10 mb-10 ">
+                                    <div class="row">
+                                       <div class="col-xl-6">
+                                            <div class="label label-primary">
+                                                <p>
+                                                Ikony dodajemy poprzez <code class="label label-info">&lt;i&gt;class="material-icons&lt;i&gt;</code>,<br>
+                                                a kolory przez dodanie odpowiedni klas naprzykład <code class="label label-info">mi-primary</code></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="">
+                                                <div class="row row-justify-center" style="font-size: 2rem;">       
+                                                    <i class="m-10 material-icons mi-primary">settings_brightness</i>
+                                                    <i class="m-10 material-icons mi-success">settings_brightness</i>
+                                                    <i class="m-10 material-icons mi-danger">settings_brightness</i>
+                                                    <i class="m-10 material-icons mi-info">settings_brightness</i>
+                                                    <i class="m-10 material-icons mi-warning">settings_brightness</i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 panel mt-10 mb-10 ">
+                                    <div class="row">
+                                       <div class="col-xl-6">
+                                            <div class="label label-primary">
+                                                <p>
+                                                Mniejsze ikony <br>
+                                                <code class="label label-info">&lt;i&gt;class="mi-small&lt;i&gt;</code></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="">
+                                                <div class="row row-justify-center">       
+                                                    <i class="m-10 material-icons mi-primary mi-small">settings_brightness</i>
+                                                    <i class="m-10 material-icons mi-success mi-small">settings_brightness</i>
+                                                    <i class="m-10 material-icons mi-danger mi-small">settings_brightness</i>
+                                                    <i class="m-10 material-icons mi-info mi-small">settings_brightness</i>
+                                                    <i class="m-10 material-icons mi-warning mi-small">settings_brightness</i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 panel mt-10 mb-10 ">
+                                    <div class="row">
+                                       <div class="col-xl-6">
+                                            <div class="label label-primary">
+                                                <p>
+                                                Większe ikony <br>
+                                                <code class="label label-info">&lt;i&gt;class="mi-large"&lt;i&gt;</code></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="">
+                                                <div class="row row-justify-left">       
+                                                    <i class="mt-10 mb-10 material-icons mi-primary mi-large">settings_brightness</i>
+                                                    <i class="mt-10 mb-10 material-icons mi-success mi-large">settings_brightness</i>
+                                                    <i class="mt-10 mb-10 material-icons mi-danger mi-large">settings_brightness</i>
+                                                    <i class="mt-10 mb-10 material-icons mi-info mi-large">settings_brightness</i>
+                                                    <i class="mt-10 mb-10 material-icons mi-warning mi-large">settings_brightness</i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 panel mt-10 mb-10 ">
+                                    <div class="row">
+                                       <div class="col-xl-6">
+                                            <div class="label label-primary">
+                                                <p>
+                                                Przycisk wraz z ikoną <br>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="">
+                                                <div class="row row-justify-center">       
+                                                    <button class="btn">Przycisk <i class="material-icons mi-la">settings_brightness</i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12 panel mt-10 mb-10 ">
+                                    <div class="row">
+                                       <div class="col-xl-6">
+                                            <div class="label label-primary">
+                                                <p>Po więcej ikon zapraszam na stronę <strong>Material icons</strong></p> 
+                                                
+                                                 
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="">
+                                                <div class="row row-justify-center">       
+                                                    <a href="https://material.io/icons/" class="btn btn-info">More Icons! <i class="material-icons">face</i> </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+            </div>
+        </section>
+        <!-- FOOTER -->
+        <footer>
+            <div class="col-xl-12 main-color">
+              <div class="text-center">
+                 <p>Damian Wątroba / kurs z kuvi.pl</p>
+              </div>
+            </div>
+        </footer>
+        <script src="js/main.js"></script>
+    </body>
+</html>

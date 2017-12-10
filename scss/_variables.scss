@@ -1,0 +1,38 @@
+
+$color_white: #fcfcfc;
+$color_black: #161616;
+$color_gray: #ccc;
+$color_primary: #8aafea;
+$color_success: #12ba1d;
+$color_warning: #f4d01d;
+$color_danger: #db3b3b;
+$color_info: #0074e2;
+$color_navbar_background: #000;
+
+$container_max_width: 1200px;
+$root_font_size: 15px;
+$base_line_height: 1.35;
+$base_font_family: 'Open Sans', sans-serif;
+$headings_weight: 300;
+$table_border: 2px solid $color_black;
+$grid_padding: 12px;
+
+$color_white_dark: darken($color_white, 20%);
+$color_gray_dark: darken($color_gray, 10%);
+$color_primary_dark: darken($color_primary, 10%);
+$color_success_dark: darken($color_success, 10%);
+$color_warning_dark: darken($color_warning, 10%);
+$color_danger_dark: darken($color_danger, 10%);
+$color_info_dark: darken($color_info, 10%);
+
+$color_white_light: lighten($color_white, 5%);
+$color_gray_light: lighten($color_gray, 10%);
+$color_primary_light: lighten($color_primary, 5%);
+$color_success_light: lighten($color_success, 5%);
+$color_warning_light: lighten($color_warning, 15%);
+$color_danger_light: lighten($color_danger, 5%);
+$color_info_light: lighten($color_info, 5%);
+
+$border-radius: 0.5em;
+$transition_default: .3s all;
+$tooltip_width: 10 * 1em;

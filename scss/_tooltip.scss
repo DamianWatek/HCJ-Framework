@@ -1,0 +1,90 @@
+.tooltip {
+    border-bottom: 1px dotted $color_black;
+    cursor: help;
+    position: relative;
+    
+    &:after, &:before {
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+        transition: $transition_default;
+    }
+    
+    &:hover {
+        &:after, &:before {
+            opacity: 1;
+            visibility: visible;        
+        }
+    }
+    
+    &:after {
+        content: attr(data-tooltip);
+        background: $color_black;
+        color: $color_white;
+        padding: .2em .5em;
+        width: $tooltip_width;
+        text-align: center;
+        //border-radius: .4em; 
+    }
+    
+    &:before {
+        content: '';
+        width: 0;
+        height: 0;
+        border: .5em solid;
+    }
+    
+    &.tooltip-left {
+        &:after {
+            top: -.2em;
+            left: -$tooltip_width;
+            margin-left: -.6em;
+        }
+        &:before {
+            border-color: transparent transparent transparent $color_black;
+            top: .2em;
+            //left: -.01em;
+            margin-left: -.6em;
+        }
+    }
+    &.tooltip-right {
+        &:after {
+            top: -.2em;
+            margin-left: .6em;
+        }
+        &:before {
+            border-color: transparent $color_black transparent transparent;
+            top: .2em;
+            right: -.6em;
+        }
+    }
+    &.tooltip-top {
+        &:after {
+            bottom: 1em;
+            margin-bottom: .6em;
+            left: -$tooltip_width/2;
+            margin-left: 50%;
+        }
+        &:before {
+            border-color: $color_black transparent transparent transparent;
+            top: -.24em;
+            left: -.4em;
+            margin-left: 50%;
+        }
+    }
+    &.tooltip-bottom {
+        &:after {
+            top: 1.2em;
+            margin-top: .6em;
+            left: -$tooltip_width/2;
+            margin-left: 50%;
+        }
+        &:before {
+            border-color: transparent transparent $color_black transparent;
+            bottom: -.44em;
+            left: -.4em;
+            margin-left: 50%;
+        }
+    }
+    
+}

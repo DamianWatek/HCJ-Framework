@@ -1,0 +1,52 @@
+.panel {
+    box-shadow: 1px 1px 5px $color_black; 
+    
+    .panel-heading {
+        font-size: 2rem;
+        background-color: $color_white_dark;
+        padding: 1rem;
+    }
+    
+    .panel-body { padding: 1rem; }
+    
+    &.panel-primary {
+        background-color: $color_primary_light;
+        color: $color_white;
+        
+        .panel-heading {
+            background-color: $color_primary_dark;
+        }
+    }
+    &.panel-success {
+        background-color: $color_success_light;
+        color: $color_white;
+        
+        .panel-heading {
+            background-color: $color_success_dark;
+        }
+    }
+    &.panel-warning {
+        background-color: $color_warning_light;
+        color: $color_white;
+        
+        .panel-heading {
+            background-color: $color_warning_dark;
+        }
+    }
+    &.panel-danger {
+        background-color: $color_danger_light;
+        color: $color_white;
+        
+        .panel-heading {
+            background-color: $color_danger_dark;
+        }
+    }
+    &.panel-info {
+        background-color: $color_info_light;
+        color: $color_white;
+        
+        .panel-heading {
+            background-color: $color_info_dark;
+        }
+    }
+}

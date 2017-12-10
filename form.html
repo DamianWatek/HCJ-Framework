@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+    <head>
+        <!-- meta tagi !-->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="author" content="Damian Watek" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>HCJ Framework</title>
+        <!-- link tagi !-->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=latin-ext" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/myFramework.css">
+    </head>
+    <body>
+        <!-- NAWIGACJA -->
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="navbar-logo">HCJ</a>
+                <a href="#" class="navbar-mobile-menu-button" data-menu-id="#menu-1">Manu</a>
+                <ul class="navbar-menu" id="menu-1">
+                    <li><a href="typography.html">Typografia</a></li>
+                    <li><a href="table.html">Tabele</a></li>
+                    <li><a href="form.html">Formularze</a></li>
+                    <li><a href="button.html">Przyciski</a></li>
+                    <li><a href="icon.html">Ikony</a></li>
+                    <li><a href="label.html">Etykiety</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-menu-button">Więcej <i class="material-icons">arrow_drop_down</i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="pagination.html">Paginacja</a></li>
+                            <li><a href="image.html">Obrazki</a></li>
+                            <li><a href="panel.html">Panele</a></li>
+                            <li><a href="preloader.html">Preloadery</a></li>
+                            <li><a href="tooltip.html">Tooltipy</a></li>
+                            <li><a href="alert.html">Alerty</a></li>
+                            <li><a href="tabs.html">Zakladki</a></li>
+                            <li><a href="modal.html">Wyskakujące okienka</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- HEADER -->
+        <header>
+            <div class="col-xl-12 main-color border-bottom-black">
+                  <div class="text-center">
+                     <h1>HCJ Framework</h1>
+                  </div>
+            </div>
+        </header>
+        <section class="page">
+            <!-- Nazwa działu -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 text-center">
+                        <h4>Formularze! <i class="material-icons mi-primary">face</i></h4>
+                    </div>
+                </div>
+            </div>
+            <!-- CONTENT -->
+            <div class="row mb-20">
+                <!-- ASIDE CONTENT -->
+                <aside class="col-xl-3 side-menu">
+                    <div class="row row-justify-center border-bottom-black pad-30 main-color">
+                        <img src="images/logo_big.png" alt="Logo Damian Watroba" class="img-responsive ">  
+                    </div>
+                    <div class="row row-justify-center pad-30 ">
+                        <p class="hidden-s">Cześć nazywam się Damian Wątroba i o to moja wersja HCJ Frameworka napisanego wraz z <strong>Adrianem Bieniasem</strong> twórcą kursu <i>Własny Framework HTML/CSS/JS</i>, który można znaleźć na stronie <a href="https://kuvi.pl/kurs/276/wlasny-framework-htmlcssjs-wprowadzenie">kuvi.pl</a></p>
+                    </div>
+                </aside>
+                <!-- MAIN CONTENT -->
+                <article class="col-xl-9">
+                    <section class="border-box-black pad-10">
+                        <div class="container">
+                        <div class="row">
+                            <div class="col-xl-12 pad-0 bg-primary">
+                                <h6><strong>Kilka przykładów formularzy</strong></h6>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-12 panel mt-10 mb-10 ">
+                                <div class="row">
+                                    <div class="col-xl-4">
+                                        <div class="">
+                                            <div class="label label-primary">
+                                                <p>Standardowy formularz</p>
+                                            </div>
+                                            <form class="pad-10">
+                                                <div class="form-input">
+                                                    <input id="input-1" type="text" name="" placeholder="" value="">
+                                                    <label for="input-1">E-mail</label>
+                                                </div>
+                                                <div class="form-input">
+                                                    <input id="input-2" type="text" name="" placeholder="">
+                                                    <label for="input-2">Imię </label>
+                                                </div>
+                                                <div class="form-input">
+                                                    <input id="input-3" type="text" name="" placeholder="">
+                                                    <label for="input-3">Naziwsko</label>
+                                                </div>
+                                                <div class="form-input">
+                                                    <textarea id="textarea-1" name=""></textarea>
+                                                    <label for="textarea-1">Tekst</label>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-8">
+                                        <p>Kod</p>
+                                        <div class="bg-primary border-radius overflow">
+                                            <pre><code>
+&lt;form&gt;
+    &lt;div class="form-input"&gt;
+        &lt;input id="input-1" type="text" name="" placeholder="" value=""&gt;
+        &lt;label for="input-1"&gt; E-mail&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class="form-input"&gt;
+        &lt;input id="input-2" type="text" name="" placeholder=""&gt;
+        &lt;label for="input-2"&gt; Imię &lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class="form-input"&gt;
+        &lt;input id="input-3" type="text" name="" placeholder=""&gt;
+        &lt;label for="input-3"&gt; Naziwsko&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class="form-input"&gt;
+        &lt;textarea id="textarea-1" name=""&gt;&lt;/textarea&gt;
+        &lt;label for="textarea-1"&gt; Tekst&lt;/label&gt;
+    &lt;/div&gt;
+&lt;/form&gt;
+                                            </code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-12 panel mt-10 mb-10">
+                                <div class="row">
+                                    <div class="col-xl-4">
+                                        <div class="">
+                                            <div class="label label-primary">
+                                                <p>Formularz wyboru</p>
+                                            </div>
+                                            <form class="pad-10">
+                                                <div class="form-input">
+                                                    <select name="">
+                                                        <option value="" disabled selected hidden="">Wybierz opcje</option>
+                                                        <option value="">Opcja 1</option>
+                                                        <option value="">Opcja 2</option>
+                                                        <option value="">Opcja 3</option>
+                                                    </select>     
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-8">
+                                        <p>Kod</p>
+                                        <div class="bg-primary border-radius overflow">
+                                            <pre><code>
+&lt;form class="pad-10"&gt;
+    &lt;div class="form-input"&gt;
+        &alt;select name=""&gt;
+            &lt;option value="" disabled selected hidden=""&gt;Wybierz opcje&lt;/option&gt;
+            &lt;option value=""&gt;Opcja 1&lt;/option&gt;
+            &lt;option value=""&gt;Opcja 2&lt;/option&gt;
+            &lt;option value=""&gt;Opcja 3&lt;/option&gt;
+        &lt;/select&gt;     
+    &lt;/div&gt;
+&lt;/form&gt;
+                                            </code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-12 panel mt-10 mb-10">
+                                <div class="row">
+                                    <div class="col-xl-4">
+                                        <div class="">
+                                            <div class="label label-primary">
+                                                <p>Formularz typu radio</p>
+                                            </div>
+                                            <form class="pad-10">
+                                                <div class="form-radio">
+                                                    <input id="plec-mezczyzna" type="radio" name="plec" value="mezczyzna">
+                                                    <label for="plec-mezczyzna">Mężczyzna</label>
+
+                                                    <input id="plec-kobieta" type="radio" name="plec" value="kobieta">
+                                                    <label for="plec-kobieta">Kobieta</label>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-8">
+                                        <p>Kod</p>
+                                        <div class="bg-primary border-radius overflow">
+                                            <pre><code>
+&lt;form class="pad-10"&gt;
+    &lt;div class="form-radio"&gt;
+        &lt;input id="plec-mezczyzna" type="radio" name="plec" value="mezczyzna"&gt;
+        &lt;label for="plec-mezczyzna">Mężczyzna&lt;/label&gt;
+
+        &lt;input id="plec-kobieta" type="radio" name="plec" value="kobieta"&gt;
+        &lt;label for="plec-kobieta">Kobieta&lt;/label&gt;
+    &lt;/div&gt;
+&lt;/form&gt;
+                                            </code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-12 panel mt-10 mb-10">
+                                <div class="row">
+                                    <div class="col-xl-4">
+                                        <div class="">
+                                            <div class="label label-primary">
+                                                <p>Formularz typu checkbox</p>
+                                            </div>
+                                            <form class="pad-10">
+                                                <div class="form-checkbox">
+                                                    <input id="dni-robocze-poniedzialek" type="checkbox" name="" value="poniedzialek">
+                                                    <label for="dni-robocze-poniedzialek">Poniedziałek</label>
+                                                    <input id="dni-robocze-wtorek" type="checkbox" name="" value="wtorek">
+                                                    <label for="dni-robocze-wtorek">Wtorek</label>
+                                                    <input id="dni-robocze-sroda" type="checkbox" name="" value="sroda">
+                                                    <label for="dni-robocze-sroda">Środa</label>
+                                                    <input id="dni-robocze-czwartek" type="checkbox" name="" value="czwartek">
+                                                    <label for="dni-robocze-czwartek">Czwartek</label>
+                                                    <input id="dni-robocze-piatek" type="checkbox" name="" value="piatek">
+                                                    <label for="dni-robocze-piatek">Piątek</label>
+                                                    <input id="dni-robocze-sobota" type="checkbox" name="" value="sobota">
+                                                    <label for="dni-robocze-sobota">Sobota</label>
+                                                    <input id="dni-robocze-niedziela" type="checkbox" name="" value="niedziela">
+                                                    <label for="dni-robocze-niedziela">Niedziela</label>
+                                                </div>                    
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-8">
+                                        <p>Kod</p>
+                                        <div class="bg-primary border-radius overflow">
+                                            <pre><code>
+&lt;form class="pad-10"&gt;
+    &lt;div class="form-checkbox"&gt;
+        &lt;input id="dni-robocze-poniedzialek" type="checkbox" name="" value="poniedzialek"&gt;
+        &lt;label for="dni-robocze-poniedzialek">Poniedziałek&lt;/label&gt;
+        &lt;input id="dni-robocze-wtorek" type="checkbox" name="" value="wtorek"&gt;
+        &lt;label for="dni-robocze-wtorek">Wtorek&lt;/label&gt;
+        &lt;input id="dni-robocze-sroda" type="checkbox" name="" value="sroda"&gt;
+        &lt;label for="dni-robocze-sroda">Środa&lt;/label&gt;
+        &lt;input id="dni-robocze-czwartek" type="checkbox" name="" value="czwartek"&gt;
+        &lt;label for="dni-robocze-czwartek">Czwartek&lt;/label&gt;
+        &lt;input id="dni-robocze-piatek" type="checkbox" name="" value="piatek"&gt;
+        &lt;label for="dni-robocze-piatek"&gt;Piątek&lt;/label&gt;
+        &lt;input id="dni-robocze-sobota" type="checkbox" name="" value="sobota"&gt;
+        &lt;label for="dni-robocze-sobota">Sobota&lt;/label&gt;
+        &lt;input id="dni-robocze-niedziela" type="checkbox" name="" value="niedziela"&gt;
+        &lt;label for="dni-robocze-niedziela"&gt;Niedziela&lt;/label&gt;
+    &lt;/div&gt;                    
+&lt;/form&gt;
+                                            </code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </section>
+                </article>
+            </div>
+        </section>
+        <!-- FOOTER -->
+        <footer>
+            <div class="col-xl-12 main-color">
+              <div class="text-center">
+                 <p>Damian Wątroba / kurs z kuvi.pl</p>
+              </div>
+            </div>
+        </footer>
+        <script src="js/main.js"></script>
+    </body>
+</html>
+

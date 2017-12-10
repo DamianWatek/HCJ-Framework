@@ -1,0 +1,73 @@
+.alert {
+    background: $color_gray_light;
+    padding: 1em 1.5em;
+    border-radius: .3em;
+    margin: 1em 0;
+    color: $color_black;
+    opacity: 1;
+    transition: $transition_default;    
+    
+    .close {
+        background: $color_gray;
+        color: $color_white;
+        border: none;
+        border-radius: .2em;
+        font-size: 1.2em;
+        padding: 0 .35em;
+        float: right;
+        margin-left: .5em;
+        cursor: pointer;
+    }
+    
+    &.alert-dismissed {
+        opacity: 0;
+        height: 0;
+        padding: 0 1.3em;
+        margin: 0;
+        margin-top: -1em;
+        
+        .close {
+            height: 0;
+        }
+    }
+    &.alert-primary {
+        background: $color_primary_light;
+        color: $color_white;
+        
+        .close {
+            background: $color_primary;
+        }
+    }
+    &.alert-success {
+        background: $color_success_light;
+        color: $color_white;
+        
+        .close {
+            background: $color_success;
+        }
+    }
+    &.alert-warning {
+        background: $color_warning_light;
+        color: $color_white;
+        
+        .close {
+            background: $color_warning;
+        }
+    }
+    &.alert-danger {
+        background: $color_danger_light;
+        color: $color_white;
+        
+        .close {
+            background: $color_danger;
+        }
+    }
+    &.alert-info {
+        background: $color_info_light;
+        color: $color_white;
+        
+        .close {
+            background: $color_info;
+        }
+    }
+}

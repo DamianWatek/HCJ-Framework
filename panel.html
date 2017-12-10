@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+    <head>
+        <!-- meta tagi !-->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="author" content="Damian Watek" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>HCJ Framework</title>
+        <!-- link tagi !-->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=latin-ext" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/myFramework.css">
+    </head>
+    <body>
+        <!-- NAWIGACJA -->
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="navbar-logo">HCJ</a>
+                <a href="#" class="navbar-mobile-menu-button" data-menu-id="#menu-1">Manu</a>
+                <ul class="navbar-menu" id="menu-1">
+                    <li><a href="typography.html">Typografia</a></li>
+                    <li><a href="table.html">Tabele</a></li>
+                    <li><a href="form.html">Formularze</a></li>
+                    <li><a href="button.html">Przyciski</a></li>
+                    <li><a href="icon.html">Ikony</a></li>
+                    <li><a href="label.html">Etykiety</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-menu-button">Więcej <i class="material-icons">arrow_drop_down</i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="pagination.html">Paginacja</a></li>
+                            <li><a href="image.html">Obrazki</a></li>
+                            <li><a href="panel.html">Panele</a></li>
+                            <li><a href="preloader.html">Preloadery</a></li>
+                            <li><a href="tooltip.html">Tooltipy</a></li>
+                            <li><a href="alert.html">Alerty</a></li>
+                            <li><a href="tabs.html">Zakladki</a></li>
+                            <li><a href="modal.html">Wyskakujące okienka</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- HEADER -->
+        <header>
+            <div class="col-xl-12 main-color border-bottom-black">
+                  <div class="text-center">
+                     <h1>HCJ Framework</h1>
+                  </div>
+            </div>
+        </header>
+        <section class="page">
+            <!-- Nazwa działu -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 text-center">
+                        <h4>Panele! <i class="material-icons mi-primary">face</i></h4>
+                    </div>
+                </div>
+            </div>
+            <!-- CONTENT -->
+            <div class="row mb-20">
+                <!-- ASIDE CONTENT -->
+                <aside class="col-xl-3 side-menu">
+                    <div class="row row-justify-center border-bottom-black pad-30 main-color">
+                        <img src="images/logo_big.png" alt="Logo Damian Watroba" class="img-responsive ">  
+                    </div>
+                    <div class="row row-justify-center pad-30 ">
+                        <p class="hidden-s">Cześć nazywam się Damian Wątroba i o to moja wersja HCJ Frameworka napisanego wraz z <strong>Adrianem Bieniasem</strong> twórcą kursu <i>Własny Framework HTML/CSS/JS</i>, który można znaleźć na stronie <a href="https://kuvi.pl/kurs/276/wlasny-framework-htmlcssjs-wprowadzenie">kuvi.pl</a></p>
+                    </div>
+                </aside>
+                <!-- MAIN CONTENT -->
+                <article class="col-xl-9">
+                    <!-- Tabele-->
+                    <section class="border-box-black pad-10">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-12 pad-0 bg-primary">
+                                    <h6><strong>Rodzaje paneli</strong></h6>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-12 panel mt-10 mb-10">
+                                    <div class="row row-justify-space-between">
+                                       <div class="col-xl-6 col-l-6 ">
+                                            <p>Standardowy panel<br></p>
+                                            <div class="overflow bg-primary border-radius">
+                                                <pre><code>
+    &lt;div class="panel"&gt;
+        &lt;div class="panel-heading text-center"&gt;
+            Nagłówek panela
+        &lt;/div&gt;
+        &lt;div class="panel-body"&gt;
+            &lt;img src="http://via.placeholder.com/600x600" alt="przykladowy opis obrazka" class="img-responsive img-circle "&gt;
+            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum maximus lectus, ac posuere metus egestas ac.&lt;/p&gt;
+            &lt;button class="btn"&gt;Przycisk&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;</code></pre>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-l-3">
+                                            <div class="panel">
+                                                <div class="panel-heading text-center">
+                                                    Nagłówek panela
+                                                </div>
+                                                <div class="panel-body">
+                                                    <img src="http://via.placeholder.com/600x600" alt="przykladowy opis obrazka" class="img-responsive img-circle">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum maximus lectus, ac posuere metus egestas ac.</p>
+                                                    <button class="btn">Przycisk</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-12 panel mt-10 mb-10">
+                                    <div class="row row-justify-space-between">
+                                       <div class="col-xl-6 col-l-6">
+                                            <p>Panel-primary<br></p>
+                                            <div class="overflow bg-primary border-radius">
+                                                <pre><code>
+    &lt;div class="panel panel-primary"&gt;
+        &lt;div class="panel-heading text-center"&gt;
+            Nagłówek panela
+        &lt;/div&gt;
+        &lt;div class="panel-body"&gt;
+            &lt;img src="http://via.placeholder.com/600x600" alt="przykladowy opis obrazka" class="img-responsive img-circle "&gt;
+            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum maximus lectus, ac posuere metus egestas ac.&lt;/p&gt;
+            &lt;button class="btn btn-primary"&gt;Przycisk&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;</code></pre>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-l-3">
+                                            <div class="panel panel-primary">
+                                                <div class="panel-heading text-center">
+                                                    Nagłówek panela
+                                                </div>
+                                                <div class="panel-body">
+                                                    <img src="http://via.placeholder.com/600x600" alt="przykladowy opis obrazka" class="img-responsive img-circle ">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum maximus lectus, ac posuere metus egestas ac.</p>
+                                                    <button class="btn btn-primary">Przycisk</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-12 panel mt-10 mb-10">
+                                    <div class="row row-justify-space-between">
+                                       <div class="col-xl-6 col-l-6">
+                                            <p>Panel-success<br></p>
+                                            <div class="overflow bg-primary border-radius">
+                                                <pre><code>
+    &lt;div class="panel panel-success"&gt;
+        &lt;div class="panel-heading text-center"&gt;
+            Nagłówek panela
+        &lt;/div&gt;
+        &lt;div class="panel-body"&gt;
+            &lt;img src="http://via.placeholder.com/600x600" alt="przykladowy opis obrazka" class="img-responsive img-circle "&gt;
+            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum maximus lectus, ac posuere metus egestas ac.&lt;/p&gt;
+            &lt;button class="btn btn-success"&gt;Przycisk&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;</code></pre>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-l-3">
+                                            <div class="panel panel-success">
+                                                <div class="panel-heading text-center">
+                                                    Nagłówek panela
+                                                </div>
+                                                <div class="panel-body">
+                                                    <img src="http://via.placeholder.com/600x600" alt="przykladowy opis obrazka" class="img-responsive img-circle ">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum maximus lectus, ac posuere metus egestas ac.</p>
+                                                    <button class="btn btn-success">Przycisk</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-12 panel mt-10 mb-10">
+                                    <div class="row row-justify-space-between">
+                                       <div class="col-xl-6 col-l-6">
+                                            <p>Panel-warning<br></p>
+                                            <div class="overflow bg-primary border-radius">
+                                                <pre><code>
+    &lt;div class="panel panel-warning"&gt;
+        &lt;div class="panel-heading text-center"&gt;
+            Nagłówek panela
+        &lt;/div&gt;
+        &lt;div class="panel-body"&gt;
+            &lt;img src="http://via.placeholder.com/600x600" alt="przykladowy opis obrazka" class="img-responsive img-circle "&gt;
+            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum maximus lectus, ac posuere metus egestas ac.&lt;/p&gt;
+            &lt;button class="btn btn-warning"&gt;Przycisk&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;</code></pre>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-l-3">
+                                            <div class="panel panel-warning">
+                                                <div class="panel-heading text-center">
+                                                    Nagłówek panela
+                                                </div>
+                                                <div class="panel-body">
+                                                    <img src="http://via.placeholder.com/600x600" alt="przykladowy opis obrazka" class="img-responsive img-circle ">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum maximus lectus, ac posuere metus egestas ac.</p>
+                                                    <button class="btn btn-warning">Przycisk</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-12 panel mt-10 mb-10">
+                                    <div class="row row-justify-space-between">
+                                       <div class="col-xl-6 col-l-6">
+                                            <p>Panel-danger<br></p>
+                                            <div class="overflow bg-primary border-radius">
+                                                <pre><code>
+    &lt;div class="panel panel-danger"&gt;
+        &lt;div class="panel-heading text-center"&gt;
+            Nagłówek panela
+        &lt;/div&gt;
+        &lt;div class="panel-body"&gt;
+            &lt;img src="http://via.placeholder.com/600x600" alt="przykladowy opis obrazka" class="img-responsive img-circle "&gt;
+            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum maximus lectus, ac posuere metus egestas ac.&lt;/p&gt;
+            &lt;button class="btn btn-danger"&gt;Przycisk&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;</code></pre>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-l-3">
+                                            <div class="panel panel-danger">
+                                                <div class="panel-heading text-center">
+                                                    Nagłówek panela
+                                                </div>
+                                                <div class="panel-body">
+                                                    <img src="http://via.placeholder.com/600x600" alt="przykladowy opis obrazka" class="img-responsive img-circle ">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum maximus lectus, ac posuere metus egestas ac.</p>
+                                                    <button class="btn btn-danger">Przycisk</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-12 panel mt-10 mb-10">
+                                    <div class="row row-justify-space-between">
+                                       <div class="col-xl-6 col-l-6">
+                                            <p>Panel-info<br></p>
+                                            <div class="overflow bg-primary border-radius">
+                                                <pre><code>
+    &lt;div class="panel panel-info"&gt;
+        &lt;div class="panel-heading text-center"&gt;
+            Nagłówek panela
+        &lt;/div&gt;
+        &lt;div class="panel-body"&gt;
+            &lt;img src="http://via.placeholder.com/600x600" alt="przykladowy opis obrazka" class="img-responsive img-circle "&gt;
+            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum maximus lectus, ac posuere metus egestas ac.&lt;/p&gt;
+            &lt;button class="btn btn-info"&gt;Przycisk&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;</code></pre>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-l-3">
+                                            <div class="panel panel-info">
+                                                <div class="panel-heading text-center">
+                                                    Nagłówek panela
+                                                </div>
+                                                <div class="panel-body">
+                                                    <img src="http://via.placeholder.com/600x600" alt="przykladowy opis obrazka" class="img-responsive img-circle ">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum maximus lectus, ac posuere metus egestas ac.</p>
+                                                    <button class="btn btn-info">Przycisk</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+            </div>
+        </section>
+        <!-- FOOTER -->
+        <footer>
+            <div class="col-xl-12 main-color">
+              <div class="text-center">
+                 <p>Damian Wątroba / kurs z kuvi.pl</p>
+              </div>
+            </div>
+        </footer>
+        <script src="js/main.js"></script>
+    </body>
+</html>
