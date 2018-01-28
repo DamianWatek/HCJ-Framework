@@ -1,8 +1,17 @@
-#HCJ-Framework
+# HCJ-Framework
+
+### Damian W¹troba
 
 
-Czeœæ nazywam siê Damian W¹troba 
-i o to moja wersja HCJ Frameworka napisanego wraz z Adrianem Bieniasem twórc¹ kursu 
-W³asny Framework HTML/CSS/JS, który mo¿na znaleŸæ na stronie kuvi.pl
+My version of the HCJ-Framework, created with Adrian Bienias, the creator of the course
+Framework HTML / CSS / JS, which can be found on the kuvi.pl website
 
-https://damianwatek.github.io/HCJ-Framework/
+* HTML 5
+* CSS 3
+* JavaScript
+* RWD
+* Sass
+
+**Live preview:** https://damianwatek.github.io/HCJ-Framework/
+
+

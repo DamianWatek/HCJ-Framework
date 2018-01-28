@@ -130,8 +130,8 @@
     }
     
     let setBodyMargin =  (function self() {
+        let navbarFixed = document.querySelector('.navbar.fixed');
         if (document.querySelector('.navbar.fixed') !== null) {
-            let navbarFixed = document.querySelector('.navbar.fixed');
             document.querySelector('body').style.marginTop = navbarFixed.clientHeight + 20 + 'px';
         }
         return self;
